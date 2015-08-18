@@ -1,0 +1,5 @@
+<% if @sub_categories.present? %>
+  <%= render partial: "sub_category", collection: @sub_categories %>
+<% else %>  
+  <p>No sub categories</p>
+<% end %>

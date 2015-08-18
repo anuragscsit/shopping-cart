@@ -1,0 +1,5 @@
+<li><%= link_to @sub_category.name.to_s,category_sub_category_path(@category, @sub_category)%></li>
+<li><%= @item.name %></li>
+<li><%= @item.detail %></li>
+<%= image_tag @item.image_url(:thumb) %>
+ <b><%=@category.name %></b>

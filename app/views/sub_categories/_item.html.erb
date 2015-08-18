@@ -1,0 +1,21 @@
+<div class="col-md-12">
+  <div class="col-md-1">
+    <div class="product-img product-img-brd">
+        <a href = "#"><%= image_tag(item.image_url, class: "full-width img-responsive", style: "width:40px;") %></a>
+    </div>
+  </div>
+  <div class="col-md-7"> 
+    <div class="product-description product-description-brd margin-bottom-30">
+      <div class="pull-left" style="overflow:hidden;">
+        <h4 class="title-price"><%= link_to item.name,category_sub_category_item_path(@category,@sub_category,item) %></h4>
+      </div>
+    </div> 
+  </div>
+  <div class="col-md-2"> 
+    <div class="product-description product-description-brd margin-bottom-30">
+        <div class="pull-left" style="overflow:hidden;">
+          <h4 class="title-price">£ <%= item.price %></h4>
+        </div>
+     </div> 
+  </div>
+</div>
